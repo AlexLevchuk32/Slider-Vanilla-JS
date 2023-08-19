@@ -4,3 +4,32 @@
 	width: 600px;
 	margin: 0 auto;
 }
+
+.slider-container {
+	overflow: hidden;
+	background-color: #777;
+}
+
+.slider {
+	display: flex;
+	background-color: orange;
+	transition: 0.2s;
+}
+
+.slider-item {
+	height: 100px;
+	min-width: 200px;
+	&:nth-child(3n + 1) {
+		background-color: #e0e0e0;
+	}
+	&:nth-child(3n + 2) {
+		background-color: blue;
+	}
+	&:nth-child(3n + 3) {
+		background-color: red;
+	}
+}
+
+.slider-buttons {
+	text-align: center;
+}
